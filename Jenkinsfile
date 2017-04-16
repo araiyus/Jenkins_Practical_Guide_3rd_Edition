@@ -5,12 +5,6 @@ pipeline {
         jdk "JDK8"
     }
     stages {
-        stage('チェックアウト') {
-            steps {
-                // Gitリポジトリの指定
-                git url: 'https://github.com/araiyus/Jenkins_Practical_Guide_3rd_Edition.git'
-            }
-        }
         stage('Mavenビルド') {
             steps {
                 bat "mvn clean package"
