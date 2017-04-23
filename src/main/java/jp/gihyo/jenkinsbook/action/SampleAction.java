@@ -68,4 +68,5 @@ public class SampleAction {
 
         return "./WEB-INF/result.jsp";
     }
+
 }
